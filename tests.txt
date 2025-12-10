@@ -1,0 +1,22 @@
+=== JEUX DE TESTS - CRYPTOGRAPHIE ===
+
+1. César
+   - Message: "Bonjour", clé: 3 → "Erqmrxu" → déchiffre → "Bonjour"
+   - Message: "XYZ", clé: 3 → "ABC"
+   - Message: "Attaque à l'aube !", clé: 5 → "Fyyfzxj f q fzgj !"
+
+2. Vigénère
+   - Message: "Attack at dawn", clé: "LEMON" → "Lxfopv fj vywr"
+   - Message: "Hello World", clé: "PYTHON" → "Dscwr Wjnhp"
+   - Message: "Bonsoir", clé: "CLE" → "Iwmwmsh"
+
+3. RSA (exemple complet)
+   p = 61
+   q = 53
+   n = 3233
+   φ(n) = 3120
+   e = (aléatoire, coprime avec 3120, ex: 17 ou 1387)
+   d = (calculé)
+   Message: "Salut"
+   → Chiffré: [1845, 2923] (exemple)
+   → Déchiffré: "Salut" (succès)
